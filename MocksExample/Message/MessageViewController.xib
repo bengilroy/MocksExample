@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MessageViewController" customModule="EnumMocks" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicatorView" destination="wB5-Fa-ead" id="GRx-8e-gHI"/>
+                <outlet property="button" destination="FOi-e4-PA2" id="S5O-b8-T8j"/>
+                <outlet property="messageLabel" destination="FBx-Cy-FX8" id="Gmn-tu-ct3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FOi-e4-PA2">
+                    <rect key="frame" x="16" y="802" width="382" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="7oo-Is-F8R"/>
+                    </constraints>
+                    <state key="normal" title="Fetch message"/>
+                    <connections>
+                        <action selector="fetchButtonTapped" destination="-1" eventType="touchUpInside" id="zEV-Xj-P1h"/>
+                    </connections>
+                </button>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="wB5-Fa-ead">
+                    <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                </activityIndicatorView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FBx-Cy-FX8">
+                    <rect key="frame" x="16" y="438" width="382" height="20.5"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="FBx-Cy-FX8" secondAttribute="trailing" constant="16" id="8xi-XW-Q8B"/>
+                <constraint firstItem="wB5-Fa-ead" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="JA4-8n-L55"/>
+                <constraint firstItem="FOi-e4-PA2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Qru-Zu-zrW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="FOi-e4-PA2" secondAttribute="trailing" constant="16" id="Y6p-eK-g14"/>
+                <constraint firstItem="wB5-Fa-ead" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="cBn-dX-dpE"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="FOi-e4-PA2" secondAttribute="bottom" constant="16" id="eZw-F6-KSd"/>
+                <constraint firstItem="FBx-Cy-FX8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="oWZ-IO-o3z"/>
+                <constraint firstItem="FBx-Cy-FX8" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="rFS-UE-eN7"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139" y="99"/>
+        </view>
+    </objects>
+</document>
