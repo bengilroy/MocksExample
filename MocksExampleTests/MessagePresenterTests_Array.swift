@@ -1,5 +1,5 @@
 //
-//  MessagePresenterTests_Enum.swift
+//  MessagePresenterTests_Array.swift
 //  MocksExampleTests
 //
 //  Created by Ben Gilroy on 01/05/2020.
@@ -9,7 +9,7 @@
 import XCTest
 @testable import MocksExample
 
-final class MockMessageView_Enum: MessageView {
+final class MockMessageView_Array: MessageView {
 	
 	enum Event: String, CustomStringConvertible {
 		case showLoading
@@ -49,16 +49,16 @@ final class MockMessageView_Enum: MessageView {
 	
 }
 
-final class MessagePresenterTests_Enum: XCTestCase {
+final class MessagePresenterTests_Array: XCTestCase {
 	
 	private var mockService: MockMessageService!
 	private var presenter: MessagePresenter!
-	private var mockView: MockMessageView_Enum!
+	private var mockView: MockMessageView_Array!
 	
 	override func setUp() {
 		super.setUp()
 		mockService = MockMessageService()
-		mockView = MockMessageView_Enum()
+		mockView = MockMessageView_Array()
 		presenter = MessagePresenter(service: mockService)
 		presenter.view = mockView
 	}

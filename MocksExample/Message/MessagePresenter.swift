@@ -30,21 +30,21 @@ final class MessagePresenter {
 
 	// MARK: - Working
 	
-	private func fetchMessage() {
-		view?.hideMessage()
-		view?.showLoading()
-		service.fetchMessage { [weak self] result in
-			guard let self = self else { return }
-			switch result {
-			case .success(let message):
-				self.view?.updateMessage(message)
-			case .failure:
-				self.view?.updateMessage("Oops! Something went wrong")
-			}
-			self.view?.hideLoading()
-			self.view?.showMessage()
-		}
-	}
+//	private func fetchMessage() {
+//		view?.hideMessage()
+//		view?.showLoading()
+//		service.fetchMessage { [weak self] result in
+//			guard let self = self else { return }
+//			switch result {
+//			case .success(let message):
+//				self.view?.updateMessage(message)
+//			case .failure:
+//				self.view?.updateMessage("Oops! Something went wrong")
+//			}
+//			self.view?.hideLoading()
+//			self.view?.showMessage()
+//		}
+//	}
 	
 	// MARK: - Bug 1
 	
@@ -67,20 +67,20 @@ final class MessagePresenter {
 	
 	// MARK: - Bug 2
 	
-//	private func fetchMessage() {
-//		view?.hideMessage()
-//		view?.hideLoading()
-//		service.fetchMessage { [weak self] result in
-//			guard let self = self else { return }
-//			switch result {
-//			case .success(let message):
-//				self.view?.updateMessage(message)
-//			case .failure:
-//				self.view?.updateMessage("Oops! Something went wrong")
-//			}
-//			self.view?.showLoading()
-//			self.view?.showMessage()
-//		}
-//	}
+	private func fetchMessage() {
+		view?.hideMessage()
+		view?.hideLoading()
+		service.fetchMessage { [weak self] result in
+			guard let self = self else { return }
+			switch result {
+			case .success(let message):
+				self.view?.updateMessage(message)
+			case .failure:
+				self.view?.updateMessage("Oops! Something went wrong")
+			}
+			self.view?.showLoading()
+			self.view?.showMessage()
+		}
+	}
 	
 }

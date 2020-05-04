@@ -14,7 +14,7 @@
 		0CDA029B246076690069CD7A /* MessagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDA0293246076690069CD7A /* MessagePresenter.swift */; };
 		0CDA029C246076690069CD7A /* MessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDA0294246076690069CD7A /* MessageService.swift */; };
 		0CDA029D246076690069CD7A /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDA0295246076690069CD7A /* MessageViewController.swift */; };
-		0CDA02A22460767F0069CD7A /* MessagePresenterTests_Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDA029E2460767F0069CD7A /* MessagePresenterTests_Enum.swift */; };
+		0CDA02A22460767F0069CD7A /* MessagePresenterTests_Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDA029E2460767F0069CD7A /* MessagePresenterTests_Array.swift */; };
 		0CDA02A32460767F0069CD7A /* MessagePresenterTests_Bool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDA029F2460767F0069CD7A /* MessagePresenterTests_Bool.swift */; };
 		0CDA02A42460767F0069CD7A /* MessagePresenterTests_CallCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDA02A02460767F0069CD7A /* MessagePresenterTests_CallCount.swift */; };
 		0CDA02A52460767F0069CD7A /* MockMessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDA02A12460767F0069CD7A /* MockMessageService.swift */; };
@@ -42,7 +42,7 @@
 		0CDA0293246076690069CD7A /* MessagePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagePresenter.swift; sourceTree = "<group>"; };
 		0CDA0294246076690069CD7A /* MessageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageService.swift; sourceTree = "<group>"; };
 		0CDA0295246076690069CD7A /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
-		0CDA029E2460767F0069CD7A /* MessagePresenterTests_Enum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagePresenterTests_Enum.swift; sourceTree = "<group>"; };
+		0CDA029E2460767F0069CD7A /* MessagePresenterTests_Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagePresenterTests_Array.swift; sourceTree = "<group>"; };
 		0CDA029F2460767F0069CD7A /* MessagePresenterTests_Bool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagePresenterTests_Bool.swift; sourceTree = "<group>"; };
 		0CDA02A02460767F0069CD7A /* MessagePresenterTests_CallCount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagePresenterTests_CallCount.swift; sourceTree = "<group>"; };
 		0CDA02A12460767F0069CD7A /* MockMessageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockMessageService.swift; sourceTree = "<group>"; };
@@ -99,7 +99,7 @@
 			children = (
 				0CDA029F2460767F0069CD7A /* MessagePresenterTests_Bool.swift */,
 				0CDA02A02460767F0069CD7A /* MessagePresenterTests_CallCount.swift */,
-				0CDA029E2460767F0069CD7A /* MessagePresenterTests_Enum.swift */,
+				0CDA029E2460767F0069CD7A /* MessagePresenterTests_Array.swift */,
 				0CDA02A12460767F0069CD7A /* MockMessageService.swift */,
 				0CDA02822460763D0069CD7A /* Info.plist */,
 			);
@@ -242,7 +242,7 @@
 			files = (
 				0CDA02A52460767F0069CD7A /* MockMessageService.swift in Sources */,
 				0CDA02A42460767F0069CD7A /* MessagePresenterTests_CallCount.swift in Sources */,
-				0CDA02A22460767F0069CD7A /* MessagePresenterTests_Enum.swift in Sources */,
+				0CDA02A22460767F0069CD7A /* MessagePresenterTests_Array.swift in Sources */,
 				0CDA02A32460767F0069CD7A /* MessagePresenterTests_Bool.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

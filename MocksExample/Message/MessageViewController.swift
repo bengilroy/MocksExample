@@ -22,7 +22,7 @@ final class MessageViewController: UIViewController {
 	}
 	
 	private func setup() {
-		title = "Enum Mocks"
+		title = "Mocking with Swift"
 		messageLabel.isHidden = true
 		activityIndicatorView.hidesWhenStopped = true
 		presenter.view = self
